@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #f5e5c0;
+    color: #8b2e3a;
+    font-family: Tahoma, sans-serif;
+}
+
+a {
+    color: #8b2e3a;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a,
+p,
+li {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", cursive;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8b2e3a;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.horarios {
+    background-image: url("../assets/images/hero-image-pexels-enginakyurt-1435898.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 30px;
+        color: #eae4d3;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.menu {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li > h3 {
+    margin: 40px 0px 20px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #8b2e3a;
+    color: white;
+}
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.galeria img {
+    object-fit: cover;
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .horarios {
+        text-align: center;
+    }
+}
